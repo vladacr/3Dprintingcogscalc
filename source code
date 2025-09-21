@@ -54,15 +54,15 @@
                             <label for="filamentTypeDropdown" class="block text-sm font-semibold text-gray-700 mb-1">Typ filamentu</label>
                             <select id="filamentTypeDropdown" class="w-full md:w-3/4 px-4 py-2 bg-white border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 transition duration-200">
                                 <option value="" disabled>-- Vyberte typ --</option>
-                                <option value="15">Levné PLA ($15/kg)</option>
-                                <option value="20" selected>Běžné PLA ($20/kg)</option>
-                                <option value="25">Hedvábné PLA ($25/kg)</option>
-                                <option value="30">Dřevěné PLA ($30/kg)</option>
+                                <option value="15">Levné PLA (15 Kč/kg)</option>
+                                <option value="20" selected>Běžné PLA (20 Kč/kg)</option>
+                                <option value="25">Hedvábné PLA (25 Kč/kg)</option>
+                                <option value="30">Dřevěné PLA (30 Kč/kg)</option>
                                 <option value="custom">Vlastní</option>
                             </select>
                         </div>
                         <div>
-                            <label for="filamentPrice" class="block text-sm font-semibold text-gray-700 mb-1">Cena cívky filamentu ($)</label>
+                            <label for="filamentPrice" class="block text-sm font-semibold text-gray-700 mb-1">Cena cívky filamentu (Kč)</label>
                             <input type="number" id="filamentPrice" value="20.00" min="0" step="0.01" class="w-full md:w-3/4 px-4 py-2 bg-white border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 transition duration-200">
                         </div>
                         <div>
@@ -81,7 +81,7 @@
                     <h3 class="text-lg font-bold text-gray-800 mb-3">Režijní náklady</h3>
                     <div class="space-y-4">
                         <div>
-                            <label for="electricityCost" class="block text-sm font-semibold text-gray-700 mb-1">Cena elektřiny za kWh ($)</label>
+                            <label for="electricityCost" class="block text-sm font-semibold text-gray-700 mb-1">Cena elektřiny za kWh (Kč)</label>
                             <input type="number" id="electricityCost" value="0.19" min="0" step="0.01" class="w-full md:w-3/4 px-4 py-2 bg-white border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 transition duration-200">
                         </div>
                         <div>
@@ -89,12 +89,12 @@
                             <input type="number" id="printerWattage" value="150" min="0" step="1" class="w-full md:w-3/4 px-4 py-2 bg-white border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 transition duration-200">
                         </div>
                         <div>
-                            <label for="printerAmortization" class="block text-sm font-semibold text-gray-700 mb-1">Amortizace tiskárny ($/hodina)</label>
+                            <label for="printerAmortization" class="block text-sm font-semibold text-gray-700 mb-1">Amortizace tiskárny (Kč/hodina)</label>
                             <input type="number" id="printerAmortization" value="0.15" min="0" step="0.01" class="w-full md:w-3/4 px-4 py-2 bg-white border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 transition duration-200">
                         </div>
                         <div>
-                            <label for="otherOverhead" class="block text-sm font-semibold text-gray-700 mb-1">Další měsíční režijní náklady ($)</label>
-                            <p class="text-xs text-gray-500 mb-2">Vyplňte pouze v případě, že chcete zahrnout náklad a rozdělit jej číslem níže. Možná chcete započítat komerční licenci za 30 $ měsíčně a níže ji vydělit 30 nebo něco podobného. Podivné pole, já vím, ale může být užitečné.</p>
+                            <label for="otherOverhead" class="block text-sm font-semibold text-gray-700 mb-1">Další měsíční režijní náklady (Kč)</label>
+                            <p class="text-xs text-gray-500 mb-2">Vyplňte pouze v případě, že chcete zahrnout náklad a rozdělit jej číslem níže. Možná chcete započítat komerční licenci za 30 Kč měsíčně a níže ji vydělit 30 nebo něco podobného. Podivné pole, já vím, ale může být užitečné.</p>
                             <input type="number" id="otherOverhead" value="0.00" min="0" step="0.01" class="w-full md:w-3/4 px-4 py-2 bg-white border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 transition duration-200">
                         </div>
                         <div>
@@ -109,11 +109,11 @@
                     <h3 class="text-lg font-bold text-gray-800 mb-3">Další přímé náklady</h3>
                     <div class="space-y-4">
                         <div>
-                            <label for="cost1" class="block text-sm font-semibold text-gray-700 mb-1">Dodatečný náklad 1 ($)</label>
+                            <label for="cost1" class="block text-sm font-semibold text-gray-700 mb-1">Dodatečný náklad 1 (Kč)</label>
                             <input type="number" id="cost1" value="0.00" min="0" step="0.01" class="w-full md:w-3/4 px-4 py-2 bg-white border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 transition duration-200">
                         </div>
                         <div>
-                            <label for="cost2" class="block text-sm font-semibold text-gray-700 mb-1">Dodatečný náklad 2 ($)</label>
+                            <label for="cost2" class="block text-sm font-semibold text-gray-700 mb-1">Dodatečný náklad 2 (Kč)</label>
                             <input type="number" id="cost2" value="0.00" min="0" step="0.01" class="w-full md:w-3/4 px-4 py-2 bg-white border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 transition duration-200">
                         </div>
                     </div>
@@ -128,15 +128,15 @@
                     <div>
                         <label for="shippingDropdown" class="block text-sm font-semibold text-gray-700 mb-1">Typ nákladů na dopravu</label>
                         <select id="shippingDropdown" class="w-full md:w-3/4 px-4 py-2 bg-white border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 transition duration-200">
-                            <option value="0" selected>Doprava zdarma ($0)</option>
-                            <option value="5">Malé poštovné ($5)</option>
-                            <option value="7.5">Střední poštovné ($7.50)</option>
-                            <option value="11">Velké poštovné ($11)</option>
+                            <option value="0" selected>Doprava zdarma (0 Kč)</option>
+                            <option value="5">Malé poštovné (5 Kč)</option>
+                            <option value="7.5">Střední poštovné (7,50 Kč)</option>
+                            <option value="11">Velké poštovné (11 Kč)</option>
                             <option value="custom">Vlastní</option>
                         </select>
                     </div>
                     <div>
-                        <label for="shippingCost" class="block text-sm font-semibold text-gray-700 mb-1">Náklady na dopravu ($)</label>
+                        <label for="shippingCost" class="block text-sm font-semibold text-gray-700 mb-1">Náklady na dopravu (Kč)</label>
                         <input type="number" id="shippingCost" value="0.00" min="0" step="0.01" class="w-full md:w-3/4 px-4 py-2 bg-white border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 transition duration-200">
                     </div>
                     <div>
@@ -162,15 +162,15 @@
                 <div class="bg-blue-50 p-4 rounded-xl border border-blue-200 space-y-4">
                     <h3 class="text-lg font-bold text-blue-800 mb-3">Vstupy pro cenu</h3>
                     <div>
-                        <label for="salePrice" class="block text-sm font-semibold text-gray-700 mb-2">Konečná prodejní cena ($)</label>
+                        <label for="salePrice" class="block text-sm font-semibold text-gray-700 mb-2">Konečná prodejní cena (Kč)</label>
                         <input type="number" id="salePrice" value="20.00" min="0" step="0.01" class="w-full md:w-3/4 px-4 py-2 bg-white border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 transition duration-200">
                     </div>
                     <div>
-                        <label for="targetProfit" class="block text-sm font-semibold text-gray-700 mb-2">Cílový zisk na prodej ($)</label>
+                        <label for="targetProfit" class="block text-sm font-semibold text-gray-700 mb-2">Cílový zisk na prodej (Kč)</label>
                         <input type="number" id="targetProfit" value="0.00" min="0" step="0.01" class="w-full md:w-3/4 px-4 py-2 bg-white border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 transition duration-200">
                     </div>
                     <div>
-                        <label for="targetPPH" class="block text-sm font-semibold text-gray-700 mb-2">Cílové PPH ($)</label>
+                        <label for="targetPPH" class="block text-sm font-semibold text-gray-700 mb-2">Cílové PPH (Kč)</label>
                         <input type="number" id="targetPPH" value="0.00" min="0" step="0.01" class="w-full md:w-3/4 px-4 py-2 bg-white border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 transition duration-200">
                     </div>
                     <div>
@@ -185,23 +185,23 @@
                     <div class="space-y-4 text-sm">
                         <div class="flex justify-between items-center">
                             <span class="text-gray-700">Trojnásobné základní COGS (+ doprava a poplatky)</span>
-                            <span id="suggestedPrice1" class="font-bold text-gray-900">$0.00</span>
+                            <span id="suggestedPrice1" class="font-bold text-gray-900">0,00 Kč</span>
                         </div>
                         <div class="flex justify-between items-center">
-                            <span class="text-gray-700">Cíl 1 $ PPH</span>
-                            <span id="suggestedPrice2" class="font-bold text-gray-900">$0.00</span>
+                            <span class="text-gray-700">Cíl 1 Kč PPH</span>
+                            <span id="suggestedPrice2" class="font-bold text-gray-900">0,00 Kč</span>
                         </div>
                         <div class="flex justify-between items-center">
-                            <span class="text-gray-700">Cílová MSRP pro zisk na prodej ($)</span>
-                            <span id="targetProfitPrice" class="font-bold text-gray-900">$0.00</span>
+                            <span class="text-gray-700">Cílová MSRP pro zisk na prodej (Kč)</span>
+                            <span id="targetProfitPrice" class="font-bold text-gray-900">0,00 Kč</span>
                         </div>
                         <div class="flex justify-between items-center">
-                            <span class="text-gray-700">Cílová MSRP pro cílové PPH</span>
-                            <span id="targetPPHPrice" class="font-bold text-gray-900">$0.00</span>
+                            <span class="text-gray-700">Cílová MSRP pro cílové PPH (Kč)</span>
+                            <span id="targetPPHPrice" class="font-bold text-gray-900">0,00 Kč</span>
                         </div>
                         <div class="flex justify-between items-center">
-                            <span class="text-gray-700">Cílová MSRP pro cílovou marži</span>
-                            <span id="targetMarginPrice" class="font-bold text-gray-900">$0.00</span>
+                            <span class="text-gray-700">Cílová MSRP pro cílovou marži (Kč)</span>
+                            <span id="targetMarginPrice" class="font-bold text-gray-900">0,00 Kč</span>
                         </div>
                     </div>
                 </div>
@@ -215,31 +215,31 @@
                     <div class="space-y-4 text-sm">
                         <div class="flex justify-between items-center">
                             <span class="text-gray-700">Materiálové náklady (filament)</span>
-                            <span id="materialCost" class="font-bold text-gray-900">$0.00</span>
+                            <span id="materialCost" class="font-bold text-gray-900">0,00 Kč</span>
                         </div>
                         <div class="flex justify-between items-center">
                             <span class="text-gray-700">Náklady na elektřinu</span>
-                            <span id="electricityTotal" class="font-bold text-gray-900">$0.00</span>
+                            <span id="electricityTotal" class="font-bold text-gray-900">0,00 Kč</span>
                         </div>
                         <div class="flex justify-between items-center">
                             <span class="text-gray-700">Náklady na amortizaci</span>
-                            <span id="amortizationTotal" class="font-bold text-gray-900">$0.00</span>
+                            <span id="amortizationTotal" class="font-bold text-gray-900">0,00 Kč</span>
                         </div>
                         <div class="flex justify-between items-center">
                             <span class="text-gray-700">Přidělená měsíční režie</span>
-                            <span id="overheadAllocated" class="font-bold text-gray-900">$0.00</span>
+                            <span id="overheadAllocated" class="font-bold text-gray-900">0,00 Kč</span>
                         </div>
                         <div class="flex justify-between items-center">
                             <span class="text-gray-700">Dodatečný náklad 1</span>
-                            <span id="cost1Total" class="font-bold text-gray-900">$0.00</span>
+                            <span id="cost1Total" class="font-bold text-gray-900">0,00 Kč</span>
                         </div>
                         <div class="flex justify-between items-center">
                             <span class="text-gray-700">Dodatečný náklad 2</span>
-                            <span id="cost2Total" class="font-bold text-gray-900">$0.00</span>
+                            <span id="cost2Total" class="font-bold text-gray-900">0,00 Kč</span>
                         </div>
                         <div class="border-t border-green-200 pt-4 mt-4 flex justify-between items-center">
                             <span class="text-base font-bold text-green-800">COGS (bez dopravy a poplatků)</span>
-                            <span id="baseCOGS" class="text-base font-extrabold text-green-800">$0.00</span>
+                            <span id="baseCOGS" class="text-base font-extrabold text-green-800">0,00 Kč</span>
                         </div>
                     </div>
                 </div>
@@ -248,27 +248,27 @@
                 <div id="finalResultsBox" class="p-6 rounded-xl border-4">
                     <div class="flex justify-between items-center mb-4">
                         <span class="text-base font-bold text-gray-800">Celkové COGS</span>
-                        <span id="totalCOGS" class="text-base font-semibold text-gray-900">$0.00</span>
+                        <span id="totalCOGS" class="text-base font-semibold text-gray-900">0,00 Kč</span>
                     </div>
                     <div class="flex justify-between items-center mt-4">
                         <span class="text-sm font-semibold text-gray-700">Náklady na dopravu</span>
-                        <span id="shippingCostSouhrn" class="font-semibold text-gray-900">$0.00</span>
+                        <span id="shippingCostSouhrn" class="font-semibold text-gray-900">0,00 Kč</span>
                     </div>
                     <div class="flex justify-between items-center mb-4">
                         <span class="text-sm font-semibold text-gray-700">Poplatek marketplace</span>
-                        <span id="marketplaceFeeSouhrn" class="font-semibold text-gray-900">$0.00</span>
+                        <span id="marketplaceFeeSouhrn" class="font-semibold text-gray-900">0,00 Kč</span>
                     </div>
                     <div class="border-t border-gray-200 pt-4 flex justify-between items-center mb-2">
                         <span class="text-base font-bold text-gray-800">Váš zisk na kus</span>
-                        <span id="profit" class="text-base font-semibold text-gray-900">$0.00</span>
+                        <span id="profit" class="text-base font-semibold text-gray-900">0,00 Kč</span>
                     </div>
                     <div class="flex justify-between items-center">
                         <span class="text-base font-bold text-gray-800">Zisková marže</span>
-                        <span id="profitMargin" class="text-base font-semibold text-gray-900">0.00%</span>
+                        <span id="profitMargin" class="text-base font-semibold text-gray-900">0,00%</span>
                     </div>
                      <div class="flex justify-between items-center">
                         <span class="text-base font-bold text-gray-800">Zisk za hodinu (PPH)</span>
-                        <span id="pph" class="text-base font-semibold text-gray-900">$0.00</span>
+                        <span id="pph" class="text-base font-semibold text-gray-900">0,00 Kč</span>
                     </div>
                 </div>
 
@@ -280,20 +280,20 @@
                         <input type="number" id="discountPercent" value="0.00" min="0" step="0.01" class="w-full md:w-3/4 px-4 py-2 bg-white border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 transition duration-200">
                     </div>
                     <div class="flex justify-between items-center mb-2">
-                        <span class="text-base font-semibold text-gray-700">Zlevněná prodejní cena ($)</span>
-                        <span id="discountedSalePrice" class="font-bold text-gray-900">$0.00</span>
+                        <span class="text-base font-semibold text-gray-700">Zlevněná prodejní cena (Kč)</span>
+                        <span id="discountedSalePrice" class="font-bold text-gray-900">0,00 Kč</span>
                     </div>
                     <div class="border-t border-gray-200 pt-4 flex justify-between items-center mb-2">
                         <span class="text-base font-bold text-gray-800">Váš zisk na kus (se slevou)</span>
-                        <span id="discountedProfit" class="text-base font-semibold text-gray-900">$0.00</span>
+                        <span id="discountedProfit" class="text-base font-semibold text-gray-900">0,00 Kč</span>
                     </div>
                     <div class="flex justify-between items-center">
                         <span class="text-base font-bold text-gray-800">Zisková marže (se slevou)</span>
-                        <span id="discountedProfitMargin" class="text-base font-semibold text-gray-900">0.00%</span>
+                        <span id="discountedProfitMargin" class="text-base font-semibold text-gray-900">0,00%</span>
                     </div>
                      <div class="flex justify-between items-center">
                         <span class="text-base font-bold text-gray-800">Zisk za hodinu (PPH) (se slevou)</span>
-                        <span id="discountedPPH" class="text-base font-semibold text-gray-900">$0.00</span>
+                        <span id="discountedPPH" class="text-base font-semibold text-gray-900">0,00 Kč</span>
                     </div>
                 </div>
             </div>
@@ -320,17 +320,17 @@
                             <th scope="col" class="px-6 py-3">Název produktu</th>
                             <th scope="col" class="px-6 py-3 text-center">Spotřebovaný filament (g)</th>
                             <th scope="col" class="px-6 py-3 text-center">Doba tisku (h)</th>
-                            <th scope="col" class="px-6 py-3 text-center">Náklady na dopravu ($)</th>
+                            <th scope="col" class="px-6 py-3 text-center">Náklady na dopravu (Kč)</th>
                             <th scope="col" class="px-6 py-3 text-center">Tržiště</th>
                             <th scope="col" class="px-6 py-3 text-center">Poplatek (%)</th>
-                            <th scope="col" class="px-6 py-3 text-center">Základní COGS ($)</th>
-                            <th scope="col" class="px-6 py-3 text-center">Prodejní cena ($)</th>
-                            <th scope="col" class="px-6 py-3 text-center">Zisk ($)</th>
+                            <th scope="col" class="px-6 py-3 text-center">Základní COGS (Kč)</th>
+                            <th scope="col" class="px-6 py-3 text-center">Prodejní cena (Kč)</th>
+                            <th scope="col" class="px-6 py-3 text-center">Zisk (Kč)</th>
                             <th scope="col" class="px-6 py-3 text-center">Zisková marže</th>
-                            <th scope="col" class="px-6 py-3 text-center">PPH ($)</th>
-                            <th scope="col" class="px-6 py-3 text-center">Cíl 1 $ PPH ($)</th>
-                            <th scope="col" class="px-6 py-3 text-center">Cíl $ zisku ($)</th>
-                            <th scope="col" class="px-6 py-3 text-center">Cílové PPH ($)</th>
+                            <th scope="col" class="px-6 py-3 text-center">PPH (Kč)</th>
+                            <th scope="col" class="px-6 py-3 text-center">Cíl 1 Kč PPH (Kč)</th>
+                            <th scope="col" class="px-6 py-3 text-center">Cíl zisku (Kč)</th>
+                            <th scope="col" class="px-6 py-3 text-center">Cílové PPH (Kč)</th>
                             <th scope="col" class="px-6 py-3 text-center">Cílová marže (%)</th>
                         </tr>
                     </thead>
@@ -376,7 +376,7 @@
 
                 <p><strong>Přidělená měsíční režie:</strong></p>
                 <p>Přidělená měsíční režie = Další měsíční režijní náklady / Dělící faktor pro další měsíční režijní náklady</p>
-                <p class="text-xs italic">(Tento náklad je $0, pokud je dělící faktor 0)</p>
+                <p class="text-xs italic">(Tento náklad je 0 Kč, pokud je dělící faktor 0)</p>
 
                 <p><strong>Dodatečný náklad 1:</strong></p>
                 <p>Dodatečný náklad 1 = Hodnota z pole Náklad 1</p>
@@ -404,14 +404,14 @@
                 <p><strong>Zisk za hodinu (PPH):</strong></p>
                 <p>PPH = Zisk / Doba tisku</p>
 
-                <p class="text-xs italic">(Tento náklad je $0, pokud je doba tisku 0)</p>
+                <p class="text-xs italic">(Tento náklad je 0 Kč, pokud je doba tisku 0)</p>
                 <p><strong>Doporučená cena (3× základní COGS):</strong></p>
                 <p>Doporučená cena = ((Základní COGS * 3) + Náklady na dopravu) / (1 - Poplatek marketplace (%))</p>
 
-                <p><strong>Doporučená cena (cíl 1 $ PPH):</strong></p>
+                <p><strong>Doporučená cena (cíl 1 Kč PPH):</strong></p>
                 <p>Doporučená cena = (Základní COGS + Náklady na dopravu + Doba tisku) / (1 - Poplatek marketplace (%))</p>
 
-                <p><strong>Doporučená cena (cílový zisk $ na prodej):</strong></p>
+                <p><strong>Doporučená cena (cílový zisk v Kč na prodej):</strong></p>
                 <p>Doporučená cena = (Základní COGS + Náklady na dopravu + Cílový zisk na prodej) / (1 - Poplatek marketplace (%))</p>
 
                 <p><strong>Doporučená cena (cílové PPH):</strong></p>
@@ -473,6 +473,19 @@
                 summaryTargetPPHPrice: document.getElementById('summaryTargetPPHPrice'),
                 // New summary table cell for target margin price
                 summaryTargetMarginPrice: document.getElementById('summaryTargetMarginPrice'),
+            };
+
+            const currencyFormatter = new Intl.NumberFormat('cs-CZ', {
+                style: 'currency',
+                currency: 'CZK'
+            });
+            const formatCurrency = (value) => currencyFormatter.format(Number.isFinite(value) ? value : 0);
+            const formatPercentage = (value) => {
+                const numericValue = Number.isFinite(value) ? value : 0;
+                return `${numericValue.toLocaleString('cs-CZ', {
+                    minimumFractionDigits: 2,
+                    maximumFractionDigits: 2
+                })}%`;
             };
 
             const filamentTypeDropdown = document.getElementById('filamentTypeDropdown');
@@ -601,28 +614,28 @@
 
 
                 // Display results
-                outputs.materialCost.textContent = `$${materialCost.toFixed(2)}`;
-                outputs.electricityTotal.textContent = `$${electricityTotal.toFixed(2)}`;
-                outputs.amortizationTotal.textContent = `$${amortizationTotal.toFixed(2)}`;
-                outputs.overheadAllocated.textContent = `$${overheadAllocated.toFixed(2)}`;
-                outputs.cost1Total.textContent = `$${cost1.toFixed(2)}`;
-                outputs.cost2Total.textContent = `$${cost2.toFixed(2)}`;
-                outputs.baseCOGS.textContent = `$${baseCOGS.toFixed(2)}`;
-                
-                // Display shipping and fees in the summary section
-                outputs.shippingCostSouhrn.textContent = `$${shippingCost.toFixed(2)}`;
-                outputs.marketplaceFeeSouhrn.textContent = `$${totalFees.toFixed(2)}`;
+                outputs.materialCost.textContent = formatCurrency(materialCost);
+                outputs.electricityTotal.textContent = formatCurrency(electricityTotal);
+                outputs.amortizationTotal.textContent = formatCurrency(amortizationTotal);
+                outputs.overheadAllocated.textContent = formatCurrency(overheadAllocated);
+                outputs.cost1Total.textContent = formatCurrency(cost1);
+                outputs.cost2Total.textContent = formatCurrency(cost2);
+                outputs.baseCOGS.textContent = formatCurrency(baseCOGS);
 
-                outputs.totalCOGS.textContent = `$${totalCOGS.toFixed(2)}`;
-                outputs.profit.textContent = `$${profit.toFixed(2)}`;
-                outputs.profitMargin.textContent = `${profitMargin.toFixed(2)}%`;
-                outputs.pph.textContent = `$${pph.toFixed(2)}`;
-                
-                outputs.suggestedPrice1.textContent = `$${suggestedPrice1.toFixed(2)}`;
-                outputs.suggestedPrice2.textContent = `$${suggestedPrice2.toFixed(2)}`;
-                outputs.targetProfitPrice.textContent = `$${targetProfitPrice.toFixed(2)}`;
-                outputs.targetPPHPrice.textContent = `$${targetPPHPrice.toFixed(2)}`;
-                outputs.targetMarginPrice.textContent = `$${targetMarginPrice.toFixed(2)}`; // Display the new price
+                // Display shipping and fees in the summary section
+                outputs.shippingCostSouhrn.textContent = formatCurrency(shippingCost);
+                outputs.marketplaceFeeSouhrn.textContent = formatCurrency(totalFees);
+
+                outputs.totalCOGS.textContent = formatCurrency(totalCOGS);
+                outputs.profit.textContent = formatCurrency(profit);
+                outputs.profitMargin.textContent = formatPercentage(profitMargin);
+                outputs.pph.textContent = formatCurrency(pph);
+
+                outputs.suggestedPrice1.textContent = formatCurrency(suggestedPrice1);
+                outputs.suggestedPrice2.textContent = formatCurrency(suggestedPrice2);
+                outputs.targetProfitPrice.textContent = formatCurrency(targetProfitPrice);
+                outputs.targetPPHPrice.textContent = formatCurrency(targetPPHPrice);
+                outputs.targetMarginPrice.textContent = formatCurrency(targetMarginPrice); // Display the new price
 
                 // Change color of final results box based on profit
                 if (profit > 0) {
@@ -634,10 +647,10 @@
                 }
                 
                 // Display discounted results
-                outputs.discountedSalePrice.textContent = `$${discountedSalePrice.toFixed(2)}`;
-                outputs.discountedProfit.textContent = `$${discountedProfit.toFixed(2)}`;
-                outputs.discountedProfitMargin.textContent = `${discountedProfitMargin.toFixed(2)}%`;
-                outputs.discountedPPH.textContent = `$${discountedPPH.toFixed(2)}`;
+                outputs.discountedSalePrice.textContent = formatCurrency(discountedSalePrice);
+                outputs.discountedProfit.textContent = formatCurrency(discountedProfit);
+                outputs.discountedProfitMargin.textContent = formatPercentage(discountedProfitMargin);
+                outputs.discountedPPH.textContent = formatCurrency(discountedPPH);
 
                 // Change color of discounted results box based on profit
                 if (discountedProfit > 0) {
@@ -653,18 +666,18 @@
                 outputs.summaryProductName.textContent = productName;
                 outputs.summaryPrintWeight.textContent = printWeight;
                 outputs.summaryPrintTime.textContent = printTime;
-                outputs.summaryShippingCost.textContent = `$${shippingCost.toFixed(2)}`;
+                outputs.summaryShippingCost.textContent = formatCurrency(shippingCost);
                 outputs.summaryMarketplaceName.textContent = marketplaceName;
-                outputs.summaryFeePercentage.textContent = `${(feePercentage * 100).toFixed(2)}%`;
-                outputs.summaryBaseCOGS.textContent = `$${baseCOGS.toFixed(2)}`;
-                outputs.summarySalePrice.textContent = `$${salePrice.toFixed(2)}`;
-                outputs.summaryProfit.textContent = `$${profit.toFixed(2)}`;
-                outputs.summaryProfitMargin.textContent = `${profitMargin.toFixed(2)}%`;
-                outputs.summaryPPH.textContent = `$${pph.toFixed(2)}`;
-                outputs.summaryTargetPrice1.textContent = `$${suggestedPrice2.toFixed(2)}`;
-                outputs.summaryTargetPrice2.textContent = `$${targetProfitPrice.toFixed(2)}`;
-                outputs.summaryTargetPPHPrice.textContent = `$${targetPPHPrice.toFixed(2)}`;
-                outputs.summaryTargetMarginPrice.textContent = `$${targetMarginPrice.toFixed(2)}`; // Update the new summary table cell
+                outputs.summaryFeePercentage.textContent = formatPercentage(feePercentage * 100);
+                outputs.summaryBaseCOGS.textContent = formatCurrency(baseCOGS);
+                outputs.summarySalePrice.textContent = formatCurrency(salePrice);
+                outputs.summaryProfit.textContent = formatCurrency(profit);
+                outputs.summaryProfitMargin.textContent = formatPercentage(profitMargin);
+                outputs.summaryPPH.textContent = formatCurrency(pph);
+                outputs.summaryTargetPrice1.textContent = formatCurrency(suggestedPrice2);
+                outputs.summaryTargetPrice2.textContent = formatCurrency(targetProfitPrice);
+                outputs.summaryTargetPPHPrice.textContent = formatCurrency(targetPPHPrice);
+                outputs.summaryTargetMarginPrice.textContent = formatCurrency(targetMarginPrice); // Update the new summary table cell
             }
             
             // Handle Filament Type dropdown change
